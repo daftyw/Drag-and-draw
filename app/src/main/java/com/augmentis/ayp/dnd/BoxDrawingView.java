@@ -21,7 +21,7 @@ public class BoxDrawingView extends View {
 
     private Box mCurrentBox;
     private List<Box> mBoxList = new ArrayList<>();
-    private Paint mBackgroudPaint;
+    private Paint mBackgroundPaint;
     private Paint mBoxPaint;
 
     public BoxDrawingView(Context context) {
@@ -34,13 +34,13 @@ public class BoxDrawingView extends View {
         mBoxPaint = new Paint();
         mBoxPaint.setColor(0x22ff0000);
 
-        mBackgroudPaint = new Paint();
-        mBackgroudPaint.setColor(0xfff8efe0);
+        mBackgroundPaint = new Paint();
+        mBackgroundPaint.setColor(0xfff8efe0);
     }
 
     @Override
     protected void onDraw(Canvas canvas) {
-        canvas.drawPaint(mBackgroudPaint);
+        canvas.drawPaint(mBackgroundPaint);
 
         for(Box box : mBoxList) {
 
